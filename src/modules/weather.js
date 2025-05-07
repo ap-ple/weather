@@ -1,4 +1,5 @@
-const weatherKey = ['D', 'V', 'T', 'P', 'F', 'Q', '9', '2', 'K', '6', 'D', 'E', 'C', 'Z', 'J', 'E', 'D', 'U', 'K', '4', '9', 'H', 'W', 'P', '2']
+const weatherKey = ['2', 'P', 'W', 'H', '9', '4', 'K', 'U', 'D', 'E', 'J', 'Z', 'C', 'E', 'D', '6', 'K', '2', '9', 'Q', 'F', 'P', 'T', 'V', 'D']
+.toReversed()
 .join("");
 
 const weatherBaseURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline";
