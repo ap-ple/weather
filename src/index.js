@@ -1,4 +1,4 @@
-import { weatherInLocation } from "./modules/weather";
+import { getWeatherInLocation } from "./modules/weather";
 
 const LOCATION_FORM_SUBMIT_MILLISECOND_DELAY = 1500;
 
@@ -31,7 +31,7 @@ locationForm.addEventListener("submit", (event) => {
    
    locationFormFieldset.disabled = true;
          
-   weatherInLocation(location)
+   getWeatherInLocation(location)
    .then((result) => {
       console.log(result.resolvedAddress);
       console.log(result.description);

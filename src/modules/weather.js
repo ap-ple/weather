@@ -3,7 +3,7 @@ const weatherKey = ['D', 'V', 'T', 'P', 'F', 'Q', '9', '2', 'K', '6', 'D', 'E', 
 
 const weatherBaseURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline";
 
-const weatherInLocation = async (location) => {
+const getWeatherInLocation = async (location) => {
    const response = await fetch(`${weatherBaseURL}/${location}?key=${weatherKey}`, {
       mode: "cors"
    });
@@ -22,4 +22,4 @@ const weatherInLocation = async (location) => {
    return json;
 };
 
-export {weatherInLocation};
+export {getWeatherInLocation};
