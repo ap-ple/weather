@@ -10,17 +10,13 @@ const getWeatherInLocation = async (location) => {
    });
    
    const text = await response.text();
-   
-   let json;
 
-   try {
-      json = JSON.parse(text);
+   if (response?.ok) {
+      return JSON.parse(text);
    }
-   catch (error) {
+   else {
       throw new Error(text);
    }
-
-   return json;
 };
 
 export {getWeatherInLocation};
