@@ -1,3 +1,5 @@
+import "./assets/styles/styles.css"
+
 import { getWeatherInLocation } from "./modules/weather";
 import { renderWeather } from "./modules/renderer";
 
